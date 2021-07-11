@@ -8,34 +8,47 @@ import Icon from 'react-native-vector-icons/Ionicons';
 
 import HomeScreen from './HomeScreen';
 import SettingsScreen from './SettingsScreen';
+import MoroccoScreen from './MoroccoScreen';
 
 const TabNavigator = createMaterialBottomTabNavigator(
   { 
     Home: {
       screen: HomeScreen,
       navigationOptions: {
-        tabBarLabel: 'Home',
+        tabBarLabel: 'Gallery',
         tabBarIcon: ({ tintColor }) => (
           <View>
-            <Icon style={[{ color: tintColor }]} size={25} name={'ios-home'} />
+            <Icon style={[{ color: tintColor }]} size={25} name={'ios-images-sharp'} />
           </View>
         ),
       },
     },
 
-       Settings: {
+    Settings: {
       screen: SettingsScreen,
       navigationOptions: {
         tabBarLabel: 'Settings',
         tabBarIcon: ({ tintColor }) => (
           <View>
             <Icon
-              style={[{ color: tintColor }]} size={25} name={'ios-settings'} />
+              style={[{ color: tintColor }]} size={25} name={'ios-chatbubbles-sharp'} />
           </View>
         ),
        
       },
     },
+
+    Morocco: {
+      screen: MoroccoScreen,
+      navigationOptions: {
+        tabBarLabel: 'Morocco',
+        tabBarIcon: ({ tintColor }) => (
+          <View>
+            <Icon style={[{ color: tintColor }]} size={25} name={'ios-book-sharp'} />
+          </View>
+        ),
+      },
+    }
 
 
   },
@@ -43,9 +56,9 @@ const TabNavigator = createMaterialBottomTabNavigator(
      
   {
     initialRouteName: 'Home',
-    activeColor: '#f0edf6',
-    inactiveColor: '#226557',
-    barStyle: { backgroundColor: '#f69b31' },
+    activeColor: '#fff',
+    inactiveColor: '#787878',
+    barStyle: { backgroundColor: '#282828' },
   }
 );
 
