@@ -2,12 +2,12 @@
 import React, {useState} from 'react';  
 import {StyleSheet, Text, TextInput, Button, View,Image,Dimensions} from 'react-native';
 
- const SettingsScreen = props => {
+ const ChatScreen = props => {
    
  return (  
         <View style={styles.container}>  
        
-       <Text>Settings </Text>
+       <Text>Chat </Text>
          
         </View>  
     );  
@@ -25,6 +25,6 @@ const styles = StyleSheet.create({
 
 });  
 
-export default SettingsScreen;
+export default ChatScreen;
 
 

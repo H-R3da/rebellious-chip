@@ -6,14 +6,14 @@ import { useNavigation } from '@react-navigation/native';
 import Icon from 'react-native-vector-icons/Ionicons';
 
 
-import HomeScreen from './HomeScreen';
-import SettingsScreen from './SettingsScreen';
+import GalleryScreen from './GalleryScreen';
+import ChatScreen from './ChatScreen';
 import MoroccoScreen from './MoroccoScreen';
 
 const TabNavigator = createMaterialBottomTabNavigator(
   { 
-    Home: {
-      screen: HomeScreen,
+    Gallery: {
+      screen: GalleryScreen,
       navigationOptions: {
         tabBarLabel: 'Gallery',
         tabBarIcon: ({ tintColor }) => (
@@ -24,10 +24,10 @@ const TabNavigator = createMaterialBottomTabNavigator(
       },
     },
 
-    Settings: {
-      screen: SettingsScreen,
+    Chat: {
+      screen: ChatScreen,
       navigationOptions: {
-        tabBarLabel: 'Settings',
+        tabBarLabel: 'Chat',
         tabBarIcon: ({ tintColor }) => (
           <View>
             <Icon
@@ -55,7 +55,7 @@ const TabNavigator = createMaterialBottomTabNavigator(
 
      
   {
-    initialRouteName: 'Home',
+    initialRouteName: 'Chat',
     activeColor: '#fff',
     inactiveColor: '#787878',
     barStyle: { backgroundColor: '#282828' },

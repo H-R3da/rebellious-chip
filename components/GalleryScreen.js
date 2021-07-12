@@ -2,11 +2,11 @@
 import React, {useState} from 'react';  
 import {StyleSheet, Text, View} from 'react-native';
  
- const HomeScreen = props => {
+ const GalleryScreen = props => {
    
  return (  
         <View style={styles.container}>       
-       <Text>HomeScreen </Text>       
+       <Text>Gallery </Text>       
         </View>  
     );  
 }
@@ -20,6 +20,6 @@ const styles = StyleSheet.create({
     },  
 });  
 
-export default HomeScreen;
+export default GalleryScreen;
 
 
